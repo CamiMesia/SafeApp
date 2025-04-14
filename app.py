@@ -11,9 +11,8 @@ from folium.plugins import MarkerCluster
 modelo_bin = joblib.load("modelo_binario.pkl")
 modelo_tipo = joblib.load("modelo_tipo_crimen.pkl")
 clases_tipo = joblib.load("clases_tipo_crimen.pkl")
-data = pd.read_csv("CRIME BOSTON.csv", encoding="latin1")
+data = pd.read_csv("CRIME_BOSTON.csv", encoding="latin1")
 data = data.dropna(subset=["Lat", "Long"])
-
 st.set_page_config(page_title="SafePath - Mapa de Crimen", layout="centered")
 st.title("🗺️ SafePath: Predicción de Crimen por Ubicación")
 st.markdown("Haz clic en el mapa para ver si una zona tiene alta probabilidad de crimen.")
