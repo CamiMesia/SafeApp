@@ -1,2 +1,0 @@
-# SafeApp
-safepath-crime-predictor
