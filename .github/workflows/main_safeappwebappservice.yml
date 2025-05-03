@@ -66,6 +66,5 @@ jobs:
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'Safeappwebappservice'
-          slot-name: 'Production'
+          app-name: 'SafeAppweb'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B92D33BB793D4CC7A30C65341FDEA8DC }}
